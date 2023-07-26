@@ -114,7 +114,7 @@ button:hover span {
     width: 100%;
 }
 
-/* Responsividade */
+
 @media screen and (max-width: 768px) {
     .navbar {
         width: 95%;
