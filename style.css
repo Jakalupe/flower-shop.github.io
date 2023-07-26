@@ -16,7 +16,7 @@ body {
     background-image: url('Asset 1teste.svg');
     background-size: cover;
     background-position: center;
-    position: relative; /* Adicionado para que o botão fique absoluto */
+    position: relative;
 }
 
 nav.navbar {
@@ -114,3 +114,37 @@ button:hover span {
     width: 100%;
 }
 
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    .navbar {
+        width: 95%;
+        padding: 20px 0;
+    }
+
+    .navbar img.logo {
+        width: 100px;
+    }
+
+    .navbar ul li {
+        margin: 0 10px;
+    }
+
+    .content h1 {
+        font-size: 3rem;
+    }
+
+    button {
+        width: 120px;
+        padding: 14px 0;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+
+    .navbar ul li {
+        margin: 10px 0;
+    }
+}
