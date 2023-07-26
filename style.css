@@ -1,1 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #f0f0f0;
+}
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-image: url('Asset 1teste.svg');
+    background-size: cover;
+    background-position: center;
+    position: relative; /* Adicionado para que o botão fique absoluto */
+}
+
+nav.navbar {
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar img.logo {
+    width: 120px;
+    cursor: pointer;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+}
+
+.navbar ul li {
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: antiquewhite;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.5s ease;
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+.content {
+    text-align: center;
+    color: antiquewhite;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content h1 {
+    font-size: 4rem;
+    margin-top: 80px;
+    color: antiquewhite;
+}
+
+.content p {
+    margin: 20px auto;
+    font-weight: 100;
+}
+
+button {
+    width: 150px;
+    padding: 18px 0;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid salmon;
+    background: transparent;
+    color: antiquewhite;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+button span {
+    background: #000000;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: width 0.5s ease;
+}
+
+button:hover span {
+    width: 100%;
+}
 
